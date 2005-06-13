@@ -5,10 +5,15 @@
 # does not need write permission in current directory.
 # Requires: mktemp
 
-tmp=`mktemp -d ${TMPDIR:-/tmp}/flareXXXXXX`
-trap 'rc=$?; rm -rf $tmp; exit $rc' EXIT INT QUIT TERM
+if [ -f "$1" ]; then
+	tmp=`mktemp -d ${TMPDIR:-/tmp}/flareXXXXXX`
+	trap 'rc=$?; rm -rf $tmp; exit $rc' EXIT INT QUIT TERM
 
-cp "$1" "$tmp/file.swf"
-cd "$tmp"
-flare file.swf
-cat file.flr
+	cp "$1" "$tmp/file.swf"
+	cd "$tmp"
+	flare file.swf
+	cat file.flr
+else
+	# propatate usage
+	flare
+fi
