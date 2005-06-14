@@ -1,5 +1,5 @@
-Summary:	Flare is a free ActionScript decompiler
-Summary(pl):	Flare jest darmowym dekompilatorem ActionScript
+Summary:	Flare - a free ActionScript decompiler
+Summary(pl):	Flare - darmowy dekompilator ActionScriptu
 Name:		flare
 Version:	0.51
 Release:	0.1
@@ -20,8 +20,8 @@ or images.
 
 %description -l pl
 Flare przetwarza pliki SWF i wyci±ga z niego wszystkie skrypty. Wynik
-zapisywany jest do pojedynczego pliku tekstowego. Tylko ActionScript
-jest wyci±gany, ¿adnego tekstu lub obrazków.
+zapisywany jest do pojedynczego pliku tekstowego. Wyci±gany jest tylko
+ActionScript, ¿adnego tekstu ani obrazków.
 
 %prep
 %setup -q -c
@@ -29,6 +29,7 @@ jest wyci±gany, ¿adnego tekstu lub obrazków.
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_bindir}
+
 install flare $RPM_BUILD_ROOT%{_bindir}
 install %{SOURCE1} $RPM_BUILD_ROOT%{_bindir}
 
