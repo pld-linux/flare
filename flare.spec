@@ -1,12 +1,12 @@
 Summary:	Flare - a free ActionScript decompiler
 Summary(pl):	Flare - darmowy dekompilator ActionScriptu
 Name:		flare
-Version:	0.51
+Version:	0.60
 Release:	0.1
 License:	freeware
 Group:		Development
-Source0:	http://www.nowrap.de/download/%{name}05linux.tgz
-# Source0-md5:	1267acb1857015145e80da14bd71d1b2
+Source0:	http://www.nowrap.de/download/%{name}06linux.tgz
+# Source0-md5:	8a0779015bbb7fd26fbdc375ba14ac50
 Source1:	%{name}.sh
 URL:		http://www.nowrap.de/flare.html
 Requires:	mktemp
