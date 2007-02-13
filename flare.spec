@@ -1,5 +1,5 @@
 Summary:	Flare - a free ActionScript decompiler
-Summary(pl.UTF-8):   Flare - darmowy dekompilator ActionScriptu
+Summary(pl.UTF-8):	Flare - darmowy dekompilator ActionScriptu
 Name:		flare
 Version:	0.60
 Release:	1
